@@ -35,6 +35,28 @@
 									<font size="+3"><h1>Humu Pii</h1></font>
 									<p>Self Programmer & Progamer</p>
 								</header>
+								
+					  <img src="images/resized playlogo pink.png" id="icon">
+				
+				<audio id="mySong">
+					<source src="audio/Yiruma (이루마) Top 5 Songs - Relaxing Music to Sleep.mp3" type="audio/mp3">
+				</audio>
+				<script>
+					var mySong =  document.getElementById("mySong");
+					var icon =  document.getElementById("icon");
+					icon.onclick = function(){
+						if(mySong.paused){
+							mySong.play();
+							icon.src ="images/resized playlogo pink.png";
+						}
+						else{
+							mySong.pause();
+							icon.src="images/resided pauselogo pink.png";
+						}
+					}
+
+
+				</script>
 								<a href="#work" class="jumplink pic">
 									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
 									<img src="images/hello-there-private-from-penguins-of-madagascar.gif" alt="">
